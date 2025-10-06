@@ -5,50 +5,70 @@ Official repository for the paper ["VideoVerse: How Far is Your T2V Generator fr
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://www.arxiv.org/abs/2506.02161) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
 ## 🔥 News
-- **[2025.09.29]** 🔥 TBD
+- **[2025.10.05]** 🔥 Evaluation code, prompt files, and evaluation questions are now released!
 
 ## Introduction
 
+VideoVerse is a benchmark for evaluating current T2V (Text-to-Video) models from the perspective of world models. It covers both static and dynamic dimensions, with each dimension containing several world-model-level and basic-level evaluation aspects essential for T2V models.
+
+<img src="assets/overall_figs.png" width="100%" alt="Overall Figure" />
 
 ## 🔧 How to Start
-
 
 VideoVerse is organized for easy benchmarking of T2V models:
 
 ### 📑 Prompt Files
 
+Our prompt file is located at `prompt/prompts_of_VideoVerse.json`, which contains all prompts and their corresponding evaluation information.
 
-### Generate Images & Directory Organization
+### Generate Videos & Directory Organization
 
-### 🧪 Evaluation with VLM
+For each dictionary in the prompt file, generate a video using the `"t2v_prompt"` field under `"t2v_following_prompt"`, and name the video using the corresponding key. The resulting video files should be organized as follows:
 
-1. **Set variables:**
-   
-2. **Run evaluation:**
-   
-3. **Summarize results:**
-   
+```
+VIDEO_FOLDER/
+  8f348e44-546c-4319-aefa-b860c02d9cbc.mp4
+  dc4fa681-8b4a-413d-9571-29af7aa36c2e.mp4
+  DICT_KEY.mp4
+```
 
-### 📊 Evaluation Results
+### 🧪 Evaluation with Gemini 2.5 Pro
 
+As recommended in our paper, we suggest using Gemini 2.5 Pro for video evaluation. Here is how to integrate your Gemini 2.5 Pro API with our evaluation code:
 
-1. **Start service:**
+1. **Set variables:**  
+   According to the official Gemini 2.5 Pro API, you need to upload your video to a platform that provides a public URL, such as:  
+   `https://www.naptmn.cn/Homepage_of_VideoVerse/static/videos/banner_video.mp4`  
+   We recommend using GitHub as a free video hosting platform.
+
+2. **Run evaluation:**  
+   After obtaining the public URL for your video, replace the `{BASEURL}` variable in `scripts/eval_with_Gemini_like_video_url.py`.  
+   Then, update the `request_api_video` function in the same script to use your own Gemini 2.5 Pro API endpoint.  
+   Run the evaluation script:
    ```bash
-   pip install vllm
-   vllm serve --model checkpoints/Qwen2.5-VL-72B-Instruct --port 8000 --host 0.0.0.0 --dtype bfloat16
+   python scripts/eval_with_Gemini_like_video_url.py
    ```
-2. **Update your evaluation command to use the Qwen2.5-VL endpoint.**
+   The results will be saved as `eval_res.json` in the `eval_res` directory.
 
-### 📜 Evaluation of Text Rendering
+3. **Summarize results:**  
+   After obtaining `eval_res.json`, update the `eval_res_path` in `scripts/cal_acc.py` to point to your result file.  
+   Run the script, and a new file ending with `_report.json` will be generated in the same directory, containing the evaluation summary.
 
-1. **Preparation:**
-   
-2. **Run evaluation:**
-   
+### 📊 Evaluation with Open-Source VLMs (e.g., QwenVL)
+
+When using open-source VLMs, you do not need to upload videos to a public URL. Simply place them in the `eval_videos` directory.
+
+1. **Replace the model checkpoints:**  
+   Update the checkpoints path in `scripts/eval_with_other_vlm.py`.
+
+2. **Run with other VLMs:**  
+   ```bash
+   python scripts/eval_with_other_vlm.py
+   ```
 
 ## 📣 Citation
 
-```
+<!-- Please add your citation information here -->
 
 ## 🙋‍♂️ Questions?
 
