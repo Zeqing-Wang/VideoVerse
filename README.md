@@ -1,6 +1,6 @@
 # <img src="assets/logo.png" width="60px" align="center"> VideoVerse: How Far is Your T2V Generator from a World Model?
 
-Official repository for the paper ["VideoVerse: How Far is Your T2V Generator from a World Model?"](https://www.arxiv.org/abs/2506.02161).
+Official repository for the paper ["VideoVerse: How Far is Your T2V Generator from a World Model?"](https://arxiv.org/abs/2510.08398).
 
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://www.arxiv.org/abs/2506.02161) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
@@ -66,9 +66,21 @@ When using open-source VLMs, you do not need to upload videos to a public URL. S
    python scripts/eval_with_other_vlm.py
    ```
 
-## 📣 Citation
+## 📌 Citation
 
-<!-- Please add your citation information here -->
+If you find the code useful for your work, please star this repo and consider citing:
+
+```bibtex
+@misc{wang2025videoversefart2vgenerator,
+      title={VideoVerse: How Far is Your T2V Generator from a World Model?}, 
+      author={Zeqing Wang and Xinyu Wei and Bairui Li and Zhen Guo and Jinrui Zhang and Hongyang Wei and Keze Wang and Lei Zhang},
+      year={2025},
+      eprint={2510.08398},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.08398}, 
+}
+```
 
 ## 🙋‍♂️ Questions?
 
