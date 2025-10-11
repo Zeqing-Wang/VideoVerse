@@ -84,6 +84,6 @@ If you find the code useful for your work, please star this repo and consider ci
 
 ## 🙋‍♂️ Questions?
 
-Open an [issue](https://github.com/Zeqing-Wang/VideoVerse/issues) or start a [discussion](https://github.com/Zeqing-Wang/VideoVerse/discussions).
+Open an [issue](https://github.com/Zeqing-Wang/VideoVerse/issues).
 
 **Enjoy using VideoVerse!** 🚀🖼️🤖
