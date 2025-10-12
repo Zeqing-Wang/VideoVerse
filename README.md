@@ -2,7 +2,7 @@
 
 Official repository for the paper ["VideoVerse: How Far is Your T2V Generator from a World Model?"](https://arxiv.org/abs/2510.08398).
 
-[🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://www.arxiv.org/abs/2506.02161) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
+[🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://arxiv.org/abs/2510.08398) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
 ## 🔥 News
 - **[2025.10.05]** 🔥 Evaluation code, prompt files, and evaluation questions are now released!
