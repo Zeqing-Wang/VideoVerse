@@ -71,14 +71,11 @@ When using open-source VLMs, you do not need to upload videos to a public URL. S
 If you find the code useful for your work, please star this repo and consider citing:
 
 ```bibtex
-@misc{wang2025videoversefart2vgenerator,
-      title={VideoVerse: How Far is Your T2V Generator from a World Model?}, 
-      author={Zeqing Wang and Xinyu Wei and Bairui Li and Zhen Guo and Jinrui Zhang and Hongyang Wei and Keze Wang and Lei Zhang},
-      year={2025},
-      eprint={2510.08398},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.08398}, 
+@article{wang2025videoverse,
+  title={VideoVerse: How Far is Your T2V Generator from a World Model?},
+  author={Wang, Zeqing and Wei, Xinyu and Li, Bairui and Guo, Zhen and Zhang, Jinrui and Wei, Hongyang and Wang, Keze and Zhang, Lei},
+  journal={arXiv preprint arXiv:2510.08398},
+  year={2025}
 }
 ```
 
