@@ -5,7 +5,8 @@ Official repository for the paper ["VideoVerse: How Far is Your T2V Generator fr
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://arxiv.org/abs/2510.08398) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
 ## 🔥 News
-- **[2025.10.17]** 🔥 VideoVer Dataset are now release!
+- **[2025.10.17]** 🔥 Sora2 achieves a new SOTA! Cool! The videos from Sora2 have been released.
+- **[2025.10.17]** 🔥 VideoVerse Dataset are now release!
 - **[2025.10.05]** 🔥 Evaluation code, prompt files, and evaluation questions are now released!
 
 ## Introduction
