@@ -1,10 +1,11 @@
 # <img src="assets/logo.png" width="60px" align="center"> VideoVerse: How Far is Your T2V Generator from a World Model?
 
-Official repository for the paper ["VideoVerse: How Far is Your T2V Generator from a World Model?"](https://arxiv.org/abs/2510.08398).
+Official repository for the paper ["VideoVerse: Does Your T2V Generator Have WorlModel Capability to Synthese Videos?"](https://arxiv.org/abs/2510.08398).
 
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://arxiv.org/abs/2510.08398) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
 ## 🔥 News
+- **[2026.03.18]** 🔥 We have updated the full text and added a sub-question validation mechanism to Dynamic. Please check theHomepage and arXiv for the latest results.
 - **[2025.10.17]** 🔥 Sora2 achieves a new SOTA! Cool! The videos from Sora2 have been released.
 - **[2025.10.17]** 🔥 VideoVerse Dataset are now release!
 - **[2025.10.05]** 🔥 Evaluation code, prompt files, and evaluation questions are now released!
@@ -52,9 +53,13 @@ As recommended in our paper, we suggest using Gemini 2.5 Pro for video evaluatio
    ```
    The results will be saved as `eval_res.json` in the `eval_res` directory.
 
+   For sub-question evaluation, you need to run
+   ```bash
+   python scripts/eval_sub_question_eval_sub_question_with_Gemini_like_video_urlwith_Gemini_like_video_url.py
+   ```
 3. **Summarize results:**  
-   After obtaining `eval_res.json`, update the `eval_res_path` in `scripts/cal_acc.py` to point to your result file.  
-   Run the script, and a new file ending with `_report.json` will be generated in the same directory, containing the evaluation summary.
+   After obtaining `eval_res.json`, update the `eval_res_path` in `scripts/cal_acc.py` and `eval_sub_question_acc.py` to point to your result file.  
+   Run the script, and a new file ending with `_report.json` will be generated in the same directory, containing the evaluation summary
 
 ### 📊 Evaluation with Open-Source VLMs (e.g., QwenVL)
 
