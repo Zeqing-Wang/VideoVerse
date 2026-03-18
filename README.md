@@ -1,11 +1,11 @@
-# <img src="assets/logo.png" width="60px" align="center"> VideoVerse: Does Your T2V Generator Have WorldModel Capability to Synthese Videos?
+# <img src="assets/logo.png" width="60px" align="center"> VideoVerse: Does Your T2V Generator Have World Model Capability to Synthese Videos?
 
-Official repository for the paper ["VideoVerse: Does Your T2V Generator Have WorldModel Capability to Synthese Videos?"](https://arxiv.org/abs/2510.08398).
+Official repository for the paper ["VideoVerse: Does Your T2V Generator Have World Model Capability to Synthese Videos?"](https://arxiv.org/abs/2510.08398).
 
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://arxiv.org/abs/2510.08398) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
 ## 🔥 News
-- **[2026.03.18]** 🔥 We have updated the full text and added a sub-question validation mechanism to Dynamic. Please check theHomepage and arXiv for the latest results.
+- **[2026.03.18]** 🔥 We have updated the full text and added a sub-question validation mechanism to Dynamic. Please check the Homepage and arXiv for the latest results.
 - **[2025.10.17]** 🔥 Sora2 achieves a new SOTA! Cool! The videos from Sora2 have been released.
 - **[2025.10.17]** 🔥 VideoVerse Dataset are now release!
 - **[2025.10.05]** 🔥 Evaluation code, prompt files, and evaluation questions are now released!
