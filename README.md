@@ -1,6 +1,6 @@
-# <img src="assets/logo.png" width="60px" align="center"> VideoVerse: Does Your T2V Generator Have World Model Capability to Synthese Videos?
+# <img src="assets/logo.png" width="60px" align="center"> VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos?
 
-Official repository for the paper ["VideoVerse: Does Your T2V Generator Have World Model Capability to Synthese Videos?"](https://arxiv.org/abs/2510.08398).
+Official repository for the paper ["VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos?"](https://arxiv.org/abs/2510.08398).
 
 [🌐 Webpage](https://www.naptmn.cn/Homepage_of_VideoVerse/) [📖 Paper](https://arxiv.org/abs/2510.08398) [🤗 Huggingface Dataset](https://huggingface.co/datasets/NNaptmn/VideoVerse) [🏆 Leaderboard](https://www.naptmn.cn/Homepage_of_VideoVerse/#leaderboard)
 
